@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 | Contact & Productivity Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Web<span>Craft.</span></div>
+        <div class="nav-tag">INTERNSHIP PROJECT</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <p class="subtitle">WELCOME TO MY PROJECT</p>
+        <h1>Contact & Productivity Dashboard</h1>
+        <p class="hero-text">
+            Connect with us and organize your daily tasks in one place.
+        </p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Contact Form -->
+        <section class="card contact-card">
+
+            <div class="card-heading">
+                <div class="icon">✉</div>
+                <div>
+                    <h2>Get In Touch</h2>
+                    <p>We would love to hear from you.</p>
+                </div>
+            </div>
+
+            <form id="contactForm">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name"
+                        placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                        placeholder="example@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message"
+                        placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="primary-btn">
+                    Send Message →
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+        </section>
+
+        <!-- To-Do List -->
+        <section class="card todo-card">
+
+            <div class="card-heading">
+                <div class="icon">✓</div>
+                <div>
+                    <h2>My Daily Tasks</h2>
+                    <p>Plan your day and stay productive.</p>
+                </div>
+            </div>
+
+            <div class="task-input">
+                <input type="text" id="taskInput"
+                    placeholder="What needs to be done?">
+
+                <button id="addBtn">+</button>
+            </div>
+
+            <div class="task-info">
+                <span>YOUR TASKS</span>
+                <span id="taskCount">0 Tasks</span>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <p id="emptyMessage">
+                No tasks yet. Add your first task!
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>WebCraft.</h3>
+        <p>Designed with HTML, CSS & JavaScript</p>
+        <p class="copyright">© 2026 My Internship Project. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
